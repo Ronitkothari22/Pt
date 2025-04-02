@@ -35,3 +35,7 @@ int main() {
 int yywrap() {
     return 1;
 }
+
+flex sample.l   # Generates lex.yy.c
+gcc lex.yy.c -o lexer.exe -lfl  # Compile using GCC
+./lexer.exe

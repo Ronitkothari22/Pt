@@ -1576,3 +1576,7 @@ int main() {
     fclose(f);
     return 0;
 }
+
+flex sample.l   # Generates lex.yy.c
+gcc lex.yy.c -o lexer.exe -lfl  # Compile using GCC
+./lexer.exe
